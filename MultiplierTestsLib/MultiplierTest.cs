@@ -17,9 +17,11 @@ namespace MultiplierTestsLib
         [TestMethod]
         public void While()
         {
+            //arrange
             MultiplierLib.Multiplier myMultiplier = new MultiplierLib.Multiplier();
-            // 
+            // act
             var actual = myMultiplier.While(20, 20);
+            //assert
             Assert.AreEqual(400, actual);
         }
     }
