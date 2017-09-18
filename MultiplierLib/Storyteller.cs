@@ -13,6 +13,7 @@ namespace MultiplierLib
 
             if (ageOfChild < 5 && willBeScary)
                 throw new InvalidOperationException();
+
             string prefix = "";
             if (ageOfChild < 7)
                 prefix += $"Lyssna nu {nameOfChild}. Det var en gång en prinsessa ";

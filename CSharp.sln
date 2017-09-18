@@ -1,13 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplierTestsLib", "MultiplierTestsLib\MultiplierTestsLib.csproj", "{419418A1-42F9-468E-B1B5-833C90CAEF3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplierLib", "MultiplierLib\MultiplierLib.csproj", "{A1E78AC2-376D-43F8-AE31-C19845A2951A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo1", "Demo1\Demo1.csproj", "{46838013-D1FD-437A-942B-8139D490ECDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2017-09-18", "2017-09-18", "{DCA32CA6-BEFA-438C-9211-B1B89F166D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaruKorgLib", "VaruKorgLib\VaruKorgLib.csproj", "{5FBB6951-E95B-426F-A4B5-AA798E085845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarukorgTestLib", "VarukorgTestLib\VarukorgTestLib.csproj", "{113A105A-E7F2-4C16-93E7-1E6117D30D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryTellerWindowsApp", "StoryTellerWindowsApp\StoryTellerWindowsApp.csproj", "{1822AA3D-28B5-4458-9D1E-6914E346094D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,25 @@ Global
 		{46838013-D1FD-437A-942B-8139D490ECDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46838013-D1FD-437A-942B-8139D490ECDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46838013-D1FD-437A-942B-8139D490ECDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FBB6951-E95B-426F-A4B5-AA798E085845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBB6951-E95B-426F-A4B5-AA798E085845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FBB6951-E95B-426F-A4B5-AA798E085845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FBB6951-E95B-426F-A4B5-AA798E085845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113A105A-E7F2-4C16-93E7-1E6117D30D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113A105A-E7F2-4C16-93E7-1E6117D30D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113A105A-E7F2-4C16-93E7-1E6117D30D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113A105A-E7F2-4C16-93E7-1E6117D30D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1822AA3D-28B5-4458-9D1E-6914E346094D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1822AA3D-28B5-4458-9D1E-6914E346094D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1822AA3D-28B5-4458-9D1E-6914E346094D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1822AA3D-28B5-4458-9D1E-6914E346094D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FBB6951-E95B-426F-A4B5-AA798E085845} = {DCA32CA6-BEFA-438C-9211-B1B89F166D90}
+		{113A105A-E7F2-4C16-93E7-1E6117D30D2C} = {DCA32CA6-BEFA-438C-9211-B1B89F166D90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65134141-AF2A-44C1-8DF4-7399ACB06B81}
