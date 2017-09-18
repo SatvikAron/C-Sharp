@@ -11,7 +11,7 @@ namespace VarukorgTestLib
         public void Orderbekräftelse()
         {
             // Arrange
-            Kund testKund = new Kund ({"Test"} ,{ "Testsson"});
+            Kund testKund = new Kund ("Test" , "Testsson");
             Product testLaptop = new Product("Laptop test");
             testLaptop.Pris = 4000;
             Product testSkärm = new Product("Skärm test");

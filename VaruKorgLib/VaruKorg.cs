@@ -23,7 +23,7 @@ public void Beställ()
         {
             this.Orderbekräftelse = new Orderbekräftelse
             {
-                Meddelande = $"{this.N} har beställt varor för {this.Total} kr"
+                Meddelande = $"{this.kund.FirstName+" "+this.kund.LastName} har beställt varor för {this.Total} kr"
             };
         }
 
