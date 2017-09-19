@@ -11,9 +11,9 @@ namespace Demo1
         static void Main(string[] args)
         {
             int totalage = 0;
-            for (int age = 0; age < 100; age++)
+            for (int age = 0; age < 101; age++)
             {
-                Console.WriteLine("we can see the upto 99 age is " +age);
+                Console.WriteLine("we can see the upto 100 age is " +age);
                 Console.WriteLine(new string('-',50));
 
                 totalage += age;
