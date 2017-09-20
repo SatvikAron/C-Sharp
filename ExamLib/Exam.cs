@@ -28,6 +28,10 @@ namespace ExamLib
 
         public void Grade(Student student, string betyg)
         {
+            if (!Studentdictionary.ContainsKey(student))
+                throw new UnassignedStudentException();
+
+
             Studentdictionary[student] = betyg;
         }
 
