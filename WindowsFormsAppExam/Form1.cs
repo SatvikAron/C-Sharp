@@ -21,7 +21,7 @@ namespace WindowsFormsAppExam
 
         private void btnGrade_Click(object sender, EventArgs e)
         {
-            Student student = new Student(txtStudent.Text);
+            Student student = new Student(txtStudent.Text);//h
             exam.Assign(student);
             exam.Grade(student, combograde.SelectedItem.ToString());
         }
