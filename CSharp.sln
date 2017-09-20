@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamLib", "ExamLib\ExamLib.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamLibTest", "ExamLibTest\ExamLibTest.csproj", "{D1D974F7-4CC3-48AB-8BD4-41FB8F1B5915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppExam", "WindowsFormsAppExam\WindowsFormsAppExam.csproj", "{967BA3B8-F039-4A70-A66E-3D2E5FC3E70F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{D1D974F7-4CC3-48AB-8BD4-41FB8F1B5915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1D974F7-4CC3-48AB-8BD4-41FB8F1B5915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1D974F7-4CC3-48AB-8BD4-41FB8F1B5915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967BA3B8-F039-4A70-A66E-3D2E5FC3E70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967BA3B8-F039-4A70-A66E-3D2E5FC3E70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967BA3B8-F039-4A70-A66E-3D2E5FC3E70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967BA3B8-F039-4A70-A66E-3D2E5FC3E70F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{D1AFC06B-43AB-4E50-899D-4115AD1AD912} = {DCA32CA6-BEFA-438C-9211-B1B89F166D90}
 		{72D415F3-AC03-45A7-AB88-84D5B5EAAFAA} = {2F3628D7-DC54-4C57-A6A5-447179EDCAEF}
 		{D1D974F7-4CC3-48AB-8BD4-41FB8F1B5915} = {2F3628D7-DC54-4C57-A6A5-447179EDCAEF}
+		{967BA3B8-F039-4A70-A66E-3D2E5FC3E70F} = {2F3628D7-DC54-4C57-A6A5-447179EDCAEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65134141-AF2A-44C1-8DF4-7399ACB06B81}

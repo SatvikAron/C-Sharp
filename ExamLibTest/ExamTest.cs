@@ -26,15 +26,15 @@ namespace ExamLibTest
             Assert.AreEqual(statistics["G"], 2);
             Assert.AreEqual(statistics["VG"], 1);
         }
-        //[TestMethod]
-        //[ExpectedException(typeof(UnassignedStudentException))]
-        //public void UnassignedStudent()
-        //{
-        //    var sut = new Exam("CSharp");
-        //    Student alice = new Student("Alice");
-        //    Student bob = new Student("Bob");
-        //    sut.Grade(alice, "G");
-        //}
+        [TestMethod]
+        [ExpectedException(typeof(UnassignedStudentException))]
+        public void UnassignedStudent()
+        {
+            var sut = new Exam("CSharp");
+            Student alice = new Student("Alice");
+            Student bob = new Student("Bob");
+            sut.Grade(alice, "G");
+        }
     }
 
    
