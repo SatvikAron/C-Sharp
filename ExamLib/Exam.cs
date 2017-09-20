@@ -20,7 +20,7 @@ namespace ExamLib
         public void Assign(Student student)
         {
             StudentsList.Add(student);
-            Studentdictionary.Add(student,"Ig");
+            Studentdictionary.Add(student,"Vg");
 
 
         }
