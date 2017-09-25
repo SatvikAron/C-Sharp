@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DiceGameLib;
+using System.Diagnostics;
 
 namespace DiceGameTests
 {
@@ -8,16 +9,19 @@ namespace DiceGameTests
     public class Dicegametest
     {
         [TestMethod]
-        public void TestMethod1Dicewinner()
+        public void Throws_Seven_Wins()
         {
-            // Arrange
-            var obj = new Game();
-            //Act
-             var  result = obj.ThrowDice(4, 3);
-            //Assert
-            Assert.AreEqual(7, result);
+            Random random = new Random();
+            var sut = new Game(random);
+            while (!sut.IsWinner)
+            {
+                sut.ThrowDices();
+                Debug.WriteLine(sut.ToString());
+            }
+            Debug.WriteLine($"Won after {sut.ThrowsMade} throws.");
+            Assert.AreEqual(7, sut.NumberOfPoints);
 
-                
+
         }
     }
 }
