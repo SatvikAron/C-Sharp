@@ -1,14 +1,14 @@
 ﻿namespace GrandTotal_StudentConsoleApp
 {
-    internal class Class
+    internal class Class: NumberofStudents
     {
         private string Name;
-        private int ToTalStudent;
+        //public int Total;
 
-        public Class(string name, int totalstudent)
+        public Class(string name, int total):base(total)
         {
             this.Name = name;
-            this.ToTalStudent = totalstudent;
+            //this.Total = total;
         }
     }
 }

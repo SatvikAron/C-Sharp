@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace GrandTotal_StudentConsoleApp
 {
@@ -11,7 +12,14 @@ namespace GrandTotal_StudentConsoleApp
             this.Name = name;
         }
 
-        public List<NumberofStudent> numberofstudents  { get; internal set; }  = new List<NumberofStudent>();
+        public List<NumberofStudents> NumberofStudent { get; internal set; } = new List<NumberofStudents>();
+        public int Total
+        {
+            get
+            {
+                return this.NumberofStudent.Sum(x => x.Total);
+            }
+                }
 
         public override string ToString()
         {
