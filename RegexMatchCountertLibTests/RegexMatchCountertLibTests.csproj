@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92A409E5-65FE-4F80-B451-69D677D2C4A6}</ProjectGuid>
+    <ProjectGuid>{6DDABE04-F8F7-430A-8D25-7A2949462207}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmployeeLibTest</RootNamespace>
-    <AssemblyName>EmployeeLibTest</AssemblyName>
+    <RootNamespace>RegexMatchCountertLibTests</RootNamespace>
+    <AssemblyName>RegexMatchCountertLibTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -48,18 +48,22 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeConverter.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="RegexMatchCountertTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeLib\EmployeeLib.csproj">
-      <Project>{cc9b763a-dd74-4709-b8d3-ca0838a77079}</Project>
-      <Name>EmployeeLib</Name>
+    <ProjectReference Include="..\RegexMatchCountertLib\RegexMatchCountertLib.csproj">
+      <Project>{de5d974b-fec2-48c2-b812-87ed8066e330}</Project>
+      <Name>RegexMatchCountertLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MATTIAS0_SIE4 2015-09-01 - 2016-08-31.SE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
