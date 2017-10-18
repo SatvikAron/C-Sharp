@@ -28,8 +28,17 @@ namespace PracticeApp
 
             personobj.EnterDetails(dateofbirth,name,telefonno);
             label5.Text = personobj.Greeting;
-            MessageBox.Show(personobj.Greeting);
+           
             System.IO.File.WriteAllText(@"C:\Users\iceso\Desktop\Csharp\CSharp\PracticeApp\Personinformation.txt", personobj.Greeting);
+
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\iceso\Desktop\Csharp\CSharp\PracticeApp\Personinformation.txt");
+
+            
+            foreach (string line in lines)
+            {
+                // Use a tab to indent each line of the file.
+                MessageBox.Show("\t" + line);
+            }
         }
 
       
