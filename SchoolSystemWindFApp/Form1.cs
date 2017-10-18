@@ -21,7 +21,9 @@ namespace SchoolSystemWindFApp
         }
 
         private void button1_Click(object sender, EventArgs e)
+
         {
+            
             var classname = textBox1.Text;
             var numberofstudent = int.Parse(textBox2.Text);
             obj.AddClass(classname, numberofstudent);
@@ -33,7 +35,8 @@ namespace SchoolSystemWindFApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"ctotal class name is= {obj.ClassCount} anr the total student num is= {obj.StudentCount}");
+            var scolname = textBox3.Text;
+            MessageBox.Show($"school name {scolname} total class name is= {obj.ClassCount} anr the total student num is= {obj.StudentCount}");
         }
     }
 }

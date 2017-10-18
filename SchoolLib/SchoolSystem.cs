@@ -7,6 +7,17 @@ namespace SchoolLib
     public class SchoolSystem
     {
         private List<Class> classes = new List<Class>();
+        private string v;
+
+        public SchoolSystem()
+        {
+        }
+
+        public SchoolSystem(string v)
+        {
+            this.v = v;
+        }
+
         public int ClassCount { get
             {
                 return  classes.Count;
@@ -20,16 +31,21 @@ namespace SchoolLib
                 
                 }
 
+        public string SchoolName { get {
+                return "Ec Utbulding";
+            } }
+
         public void AddClass(string classname, int numberofstudent)
 
         {
             var mlass = classes.SingleOrDefault(x => x.Name == classname);
-            if (mlass !=null)
+            if (mlass != null)
             {
-               mlass. NumberofStudent += numberofstudent;
+                mlass.NumberofStudent += numberofstudent;
             }
             else
-            classes.Add(new Class { Name = classname, NumberofStudent = numberofstudent });
+                classes.Add(new Class { Name = classname, NumberofStudent = numberofstudent });
+
         }
     }
 }
