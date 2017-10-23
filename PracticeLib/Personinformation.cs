@@ -12,7 +12,7 @@ namespace PracticeLib
             get
             {
                 //return "1971-04-05;Mattias Asplund;070-6186120";
-                return Dateofbirth+";"+Name+";"+TelePhoneNo;
+                return this.Dateofbirth+";"+this.Name+";"+this.TelePhoneNo;
             }
                 
                 
